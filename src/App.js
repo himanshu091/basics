@@ -9,9 +9,7 @@ function App() {
   return (
     <div className="App">
 <Navbar />
-<div className="content">
-  <h3>Content Starts from here</h3>
-</div>
+
 <Home />
     </div>
   );
