@@ -1,12 +1,18 @@
-import './App.css';
-import ReusableComponent from './component/ReusableComponent';
+import './index.css';
+import Home from './Home';
+import Navbar from './Navbar';
+
+
 
 
 function App() {
   return (
     <div className="App">
-  <ReusableComponent number = "1" />
-  <ReusableComponent number = "2" />
+<Navbar />
+<div className="content">
+  <h3>Content Starts from here</h3>
+</div>
+<Home />
     </div>
   );
 }
