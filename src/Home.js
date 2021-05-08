@@ -1,17 +1,18 @@
-import {useState} from 'react';
-
-
 
 const Home = () => {
-const [name, setName] = useState("Himanshu");
-  const changeName = () => {
-    setName("Nainy")
-  }  
+
+    const higherOrder = (name)=>{
+        console.log("Your Name is" + name)
+    }
+ 
     return (
         <div className="content">
-        <h1>Homepage</h1>
-        <p>{name}</p>
-        <button onClick={changeName}>Change Name</button>
+        <h1>Learn about anonymous function</h1>
+        
+        <button onClick={()=>{
+            higherOrder("Himanshu")
+        }} >Click Me </button>
+
         </div>
      );
 }
