@@ -2,17 +2,25 @@ import './index.css';
 import Home from './Home';
 import Navbar from './Navbar';
 
+import {BrowserRouter as Router , Route, Switch} from 'react-router-dom'
+
 
 
 
 
 function App() {
   return (
+    <Router>
     <div className="App">
 <Navbar />
+<Switch>
+  <Route path="/">
+  <Home />
+  </Route>
 
-<Home />
+</Switch>
     </div>
+    </Router>
   );
 }
 
